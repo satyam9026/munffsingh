@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Market Learning | Join Free Telegram Channel</title>
+  <meta name="description"
+    content="Stock Market Learning educational community with daily market updates, expert analysis, trading strategies, risk management and live market insights.">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #020b0e;
+      color: #fff;
+      line-height: 1.6
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit
+    }
+
+    .container {
+      width: min(1120px, 92%);
+      margin: auto
+    }
+
+    .hero {
+      min-height: 100vh;
+      padding: 20px 0 70px;
+      background: radial-gradient(circle at 50% 0%, #073c35 0, #02151a 45%, #010708 100%);
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0 25px
+    }
+
+    .logo {
+      font-size: 23px;
+      font-weight: 900;
+      letter-spacing: .5px
+    }
+
+    .logo span {
+      color: #ffe000
+    }
+
+    .nav-btn {
+      background: #ffe000;
+      color: #111;
+      padding: 10px 18px;
+      border-radius: 30px;
+      font-weight: 900
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 40px;
+      align-items: center
+    }
+
+    .badge {
+      display: inline-block;
+      color: #ffe000;
+      border: 1px solid #ffe000;
+      background: #ffe00012;
+      border-radius: 50px;
+      padding: 7px 14px;
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 16px
+    }
+
+    h1 {
+      font-size: clamp(42px, 6vw, 75px);
+      line-height: 1;
+      text-transform: uppercase
+    }
+
+    h1 span {
+      color: #ffe000
+    }
+
+    .hero-copy {
+      font-size: 19px;
+      color: #d0dddd;
+      margin: 20px 0
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      padding: 15px 24px;
+      border-radius: 12px;
+      font-weight: 900;
+      transition: .2s
+    }
+
+    .btn:hover {
+      transform: translateY(-2px)
+    }
+
+    .primary {
+      background: #ffe000;
+      color: #080808
+    }
+
+    .secondary {
+      border: 1px solid #2b4b50;
+      background: #071a20
+    }
+
+    .note {
+      font-size: 12px;
+      color: #91a4a9;
+      margin-top: 13px
+    }
+
+    .poster {
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid #1e5451;
+      box-shadow: 0 20px 70px #000b
+    }
+
+    .poster img {
+      display: block;
+      width: 100%;
+      height: auto
+    }
+
+    section {
+      padding: 80px 0
+    }
+
+    .dark {
+      background: #030d11
+    }
+
+    .title {
+      max-width: 760px;
+      text-align: center;
+      margin: 0 auto 40px
+    }
+
+    .title h2 {
+      font-size: clamp(30px, 4vw, 48px);
+      line-height: 1.05;
+      margin-bottom: 12px
+    }
+
+    .title p {
+      color: #9fb2b6
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 15px
+    }
+
+    .card {
+      padding: 23px 17px;
+      text-align: center;
+      border-radius: 17px;
+      background: linear-gradient(145deg, #09201e, #061217);
+      border: 1px solid #17413e
+    }
+
+    .card .icon {
+      font-size: 32px;
+      margin-bottom: 9px
+    }
+
+    .card h3 {
+      font-size: 16px
+    }
+
+    .card p {
+      font-size: 13px;
+      color: #9fb2b6;
+      margin-top: 6px
+    }
+
+    .telegram {
+      padding: 50px;
+      border-radius: 25px;
+      text-align: center;
+      background: linear-gradient(135deg, #008cff, #0067e8);
+      box-shadow: 0 15px 50px #006eff33
+    }
+
+    .telegram h2 {
+      font-size: clamp(30px, 5vw, 55px);
+      line-height: 1.05
+    }
+
+    .telegram p {
+      margin: 13px auto 22px;
+      max-width: 700px;
+      color: #e8f5ff
+    }
+
+    .telegram .btn {
+      background: #fff;
+      color: #0874e8
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px
+    }
+
+    .step {
+      padding: 25px;
+      border-radius: 17px;
+      background: #07151a;
+      border: 1px solid #1c373d
+    }
+
+    .number {
+      font-size: 13px;
+      color: #ffe000;
+      font-weight: 900
+    }
+
+    .step h3 {
+      margin: 7px 0
+    }
+
+    .step p {
+      font-size: 14px;
+      color: #9fb2b6
+    }
+
+    .faq {
+      max-width: 850px;
+      margin: auto
+    }
+
+    details {
+      margin: 12px 0;
+      padding: 17px 20px;
+      border-radius: 13px;
+      background: #07151a;
+      border: 1px solid #1c373d
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 800
+    }
+
+    details p {
+      color: #a6b7bb;
+      padding-top: 9px
+    }
+
+    .disclaimer {
+      border-top: 1px solid #203136;
+      border-bottom: 1px solid #203136
+    }
+
+    .disclaimer p {
+      font-size: 13px;
+      color: #9eafb3;
+      text-align: center
+    }
+
+    footer {
+      padding: 35px 0;
+      text-align: center;
+      color: #74888e;
+      font-size: 13px
+    }
+
+    @media(max-width:900px) {
+      .hero-grid {
+        grid-template-columns: 1fr
+      }
+
+      .cards {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .steps {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media(max-width:560px) {
+      .nav-btn {
+        font-size: 12px;
+        padding: 9px 13px
+      }
+
+      .logo {
+        font-size: 18px
+      }
+
+      section {
+        padding: 60px 0
+      }
+
+      .cards,
+      .steps {
+        grid-template-columns: 1fr
+      }
+
+      .telegram {
+        padding: 32px 20px
+      }
+
+      .btn {
+        width: 100%
+      }
+
+      .buttons {
+        display: grid
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero" id="home">
+    <div class="container">
+
+      <nav class="nav">
+        <div class="logo">STOCK <span>MARKET LEARNING</span></div>
+        <a class="nav-btn" href="https://t.me/+H9t8Kns7fdAzNDdh">JOIN FREE</a>
+      </nav>
+
+      <div class="hero-grid">
+
+        <div>
+          <div class="badge">EDUCATIONAL MARKET LEARNING COMMUNITY</div>
+          <h1>Trade <span>Smart.</span><br>Learn Better.</h1>
+          <p class="hero-copy">
+            Learn market concepts, technical analysis, research methods,
+            risk management and disciplined trading approaches through structured educational content.
+          </p>
+
+          <div class="buttons">
+            <a class="btn primary" href="https://t.me/+H9t8Kns7fdAzNDdh">🚀 JOIN FREE TELEGRAM</a>
+            <a class="btn secondary" href="https://t.me/+H9t8Kns7fdAzNDdh">EXPLORE LEARNING</a>
+          </div>
+
+          <p class="note">
+            Educational purposes only. Not financial or investment advice. Market activities involve risk.
+          </p>
+        </div>
+
+        <div class="poster">
+          <img src="image.png" alt="Stock Market Learning promotional poster">
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <section class="disclaimer">
+    <div class="container">
+      <p>
+        ⚠️ For educational purposes only. This website does not provide financial, investment or trading advice.
+        Trading and investing involve market risk. Please conduct your own research and consider consulting a
+        qualified financial professional.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Stock Market Learning. All Rights Reserved.
+  </footer>
+
+</body>
+
+</html>
